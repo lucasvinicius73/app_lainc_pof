@@ -5,9 +5,9 @@ class Loading extends RequestState {}
 class Empty extends RequestState {}
 
 class Error extends RequestState {
-  final String error;
+  final String message;
 
-  Error({required this.error});
+  Error({required this.message});
 }
 
 class Complete extends RequestState {}

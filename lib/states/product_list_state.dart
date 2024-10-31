@@ -4,10 +4,10 @@ sealed class ProductListState {}
 
 class LoadingProductListState implements ProductListState {}
 
-class GetterdProductListState implements ProductListState {
+class GettedProductListState implements ProductListState {
   final List<Product> products;
 
-  GetterdProductListState({required this.products});
+  GettedProductListState({required this.products});
 }
 
 class EmptyProductListState implements ProductListState {}
